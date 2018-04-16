@@ -12,7 +12,8 @@ function getHTML (options, callback) {
         bufferedData += data[i];
       }
 
-      console.log(bufferedData);
+      callback(bufferedData);
+
     });
 
     response.on('end', function() {
@@ -28,7 +29,10 @@ function printHTML (html) {
   console.log(html);
 }
 
+
 var requestOptions = {
   host: 'sytantris.github.io',
   path: '/http-examples/step4.html'
 };
+
+getHTML(requestOptions, printHTML)
