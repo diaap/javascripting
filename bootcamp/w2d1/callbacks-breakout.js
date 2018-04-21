@@ -1,7 +1,7 @@
 var text = "lorem ipsum dolor, sit amet";
 
 //instead of creating three functions like. this, I'm going to use a callback
-var txt = "lorem ipsum dolor, sit amet";
+//var txt = "lorem ipsum dolor, sit amet";
 
 function doSomething(txt, callback) { //you can call it cb
 
@@ -34,10 +34,10 @@ function saveResult(txt) {
 
 }
 
-// makeLowerCase(text);
+console.log(makeLowerCase(text));
 // makeUpperCase(text);
 // replaceV(text);
 
-doSomething(text, saveResult);
+//console.log(doSomething(text, saveResult));
 
-you could always pass it a function in the parameter if you don't reuse it
+//you could always pass it a function in the parameter if you don't reuse it

@@ -108,3 +108,8 @@ console.log(process.env)
 curl is an http client -- can handle http requests for ex:
 
 curl -v : for debugging
+http is a language, a method is a verb
+get: give me a coffee, in exchange you give them money - post
+starbucks is server I am the client
+
+JSON to send your code
